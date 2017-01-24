@@ -30,7 +30,7 @@ const makeGoalIframeUrl = ({slug, username}) => {
   return (
     <iframe
       src={url}
-      height="185px"
+      height="230px"
       width="230px"
       frameborder="0px"
     >
@@ -40,14 +40,14 @@ const makeGoalIframeUrl = ({slug, username}) => {
 
 export default class Beeminder extends React.Component {
   getJasonGoals() {
-    JASON_SLUGS.map((slug) => {
+    return JASON_SLUGS.map((slug) => {
       return makeGoalIframeUrl({slug, username: 'zinbiel'})
     })
   }
 
   getDaisyGoals() {
-    DAISY_SLUGS.map((slug) => {
-      return makeGoalIframeUrl({slug, username: 'daisycat'})
+    return DAISY_SLUGS.map((slug) => {
+      return makeGoalIframeUrl({slug, username: 'daisyhuang3'})
     })
   }
 
